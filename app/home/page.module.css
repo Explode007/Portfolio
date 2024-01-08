@@ -1,0 +1,52 @@
+
+.main {
+  text-align: center;
+}
+
+.stackedwaves {
+  aspect-ratio: 1920/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../(components)/SVG/stackedwaves.svg');
+
+}
+.stackedwavesflip {
+  aspect-ratio: 2000/600;
+  width: 100%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../(components)/SVG/stackedwaves.svg');
+  transform: rotate(180deg);
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Adjust the value as needed */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.big {
+  font-size: 70px;
+  animation: fadeInUp 3s ease forwards;
+  background-color: #000000;
+}
+
+.description {
+  font-size: 35px;
+  animation: fadeInUp 3s ease forwards;
+}
+
+.page {
+  margin: 100px;
+  animation: fadeInUp 5s ease forwards;
+}
+
